@@ -1,4 +1,5 @@
 # HyprV4
+
 This is V4 of the Hyprland install script
 
 It contains a collection of dot config files for hyprland with a simple install script.
@@ -7,7 +8,8 @@ IMPORTANT - This script is meant to run on a clean fresh Arch install on physica
 You can grab the config files and install packages by hand with the command listed below
 
 Do this ONLY if you need Nvidia support (do this first)
-```
+
+```bash
 yay -S linux-headers nvidia-dkms qt5-wayland qt5ct libva libva-nvidia-driver-git
 
 Add modules: nvidia nvidia_modeset nvidia_uvm nvidia_drm to /etc/mkinitcpio.conf
@@ -21,7 +23,7 @@ reboot!
 
 Now install the below for Hyprland
 
-```
+```bash
 yay -S hyprland kitty jq mako waybar-hyprland swww swaylock-effects \
 wofi wlogout xdg-desktop-portal-hyprland swappy grim slurp thunar \
 polkit-gnome python-requests pamixer pavucontrol brightnessctl bluez \
